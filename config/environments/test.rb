@@ -32,4 +32,8 @@ FbPhotos::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  #Facebook
+  APP_ID = 119476451447764
+  APP_SECRET = 'f9a133ef2882baff2b4fe1081563a32d'
 end

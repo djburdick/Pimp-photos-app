@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "should create a user from hash" do
+    name = 'DJ B'
+    hash['user_info']['name'] = name
+    User.create_from_hash!(hash)
+    User.first(:conditions => {:name => name}).name.should == name
+  end
+
 end
